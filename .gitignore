@@ -39,3 +39,14 @@ TestResults/
 Thumbs.db
 .DS_Store
 Desktop.ini
+
+## Build output
+publish/
+artifacts/
+TestResults/
+*.coverage
+
+## OS
+Thumbs.db
+.DS_Store
+Desktop.ini

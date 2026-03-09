@@ -71,7 +71,7 @@ builder.Services.AddSwaggerGen(c =>
 // ── CORS ──────────────────────────────────────────────────────────
 builder.Services.AddCors(options =>
     options.AddPolicy("AllowBlazor", policy =>
-        policy.WithOrigins("https://localhost:7200", "http://localhost:5200")
+        policy.WithOrigins("https://localhost:7287", "http://localhost:5152")
               .AllowAnyHeader()
               .AllowAnyMethod()));
 
@@ -93,3 +93,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+// Expose for WebApplicationFactory in integration tests
+public partial class Program { }

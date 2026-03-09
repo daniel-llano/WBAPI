@@ -8,6 +8,11 @@
     <NoWarn>$(NoWarn);1591</NoWarn>
   </PropertyGroup>
 
+  <!-- Expose internal Program class for WebApplicationFactory in integration tests -->
+  <ItemGroup>
+    <InternalsVisibleTo Include="WBAPI.IntegrationTests" />
+  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.13" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.24" />
