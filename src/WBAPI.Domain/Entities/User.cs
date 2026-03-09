@@ -10,7 +10,7 @@ public class User
 
     private User() { }
 
-    public static User Create(string username, string passwordHash, string role = "User")
+    public static User Create(string username, string passwordHash, string role = "Invitado")
     {
         return new User
         {
@@ -21,4 +21,6 @@ public class User
             CreatedAt = DateTime.UtcNow
         };
     }
+
+    public void ChangeRole(string newRole) => Role = newRole;
 }
