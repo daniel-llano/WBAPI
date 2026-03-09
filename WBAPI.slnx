@@ -5,4 +5,8 @@
     <Project Path="src/WBAPI.Domain/WBAPI.Domain.csproj" />
     <Project Path="src/WBAPI.Infrastructure/WBAPI.Infrastructure.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/WBAPI.IntegrationTests/WBAPI.IntegrationTests.csproj" />
+    <Project Path="tests/WBAPI.UnitTests/WBAPI.UnitTests.csproj" />
+  </Folder>
 </Solution>
